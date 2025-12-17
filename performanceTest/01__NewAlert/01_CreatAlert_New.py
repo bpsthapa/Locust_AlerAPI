@@ -1,6 +1,7 @@
 from locust import HttpUser, task, between, constant
 
-from ..variable import *
+#from ..variable import *
+from AlertAPI.variable import *
 
 import threading
 
