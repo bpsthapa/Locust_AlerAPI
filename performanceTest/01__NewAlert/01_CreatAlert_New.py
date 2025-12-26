@@ -1,7 +1,7 @@
 from locust import HttpUser, task, between, constant
 
 #from ..variable import *
-from AlertAPI.variable import *
+from performanceTest.variable import *
 
 import threading
 
