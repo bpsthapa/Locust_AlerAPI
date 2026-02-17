@@ -1,5 +1,4 @@
 # Ignore CLI configuration files
 .venv/
 uv.lock
-.python-version
 

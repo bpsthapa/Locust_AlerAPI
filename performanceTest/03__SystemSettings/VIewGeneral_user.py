@@ -25,7 +25,7 @@ class GetSystemSettingsUser(HttpUser):
     wait_time = constant(0)
 
     # ----- Global counters -----
-    max_requests = 10000
+    max_requests = 1000
     request_count = 0
     user_count = 0
     lock = threading.Lock()
@@ -79,4 +79,4 @@ class GetSystemSettingsUser(HttpUser):
                 logger.info(msg)
                 response.success()
 
-#locust -f performanceTest/03__SystemSettings/ViewGeneral_user.py --host=https://10.45.3.78
+#locust -f performanceTest/03__SystemSettings/ViewGeneral_user.py --host=https://10.45.12.33

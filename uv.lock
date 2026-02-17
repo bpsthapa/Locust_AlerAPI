@@ -3,6 +3,17 @@ revision = 3
 requires-python = ">=3.12"
 
 [[package]]
+name = "apiperformancetest"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "locust" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "locust", specifier = "==2.29.1" }]
+
+[[package]]
 name = "blinker"
 version = "1.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -539,17 +550,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/15/86/d0071e94987f8db59d4eeb386ddc64d0bb9b10820a8d82bcd3e53eeb2da6/msgpack-1.1.2-cp314-cp314t-win_amd64.whl", hash = "sha256:5a46bf7e831d09470ad92dff02b8b1ac92175ca36b087f904a0519857c6be3ff", size = 85772, upload-time = "2025-10-08T09:15:43.954Z" },
     { url = "https://files.pythonhosted.org/packages/81/f2/08ace4142eb281c12701fc3b93a10795e4d4dc7f753911d836675050f886/msgpack-1.1.2-cp314-cp314t-win_arm64.whl", hash = "sha256:d99ef64f349d5ec3293688e91486c5fdb925ed03807f64d98d205d2713c60b46", size = 70868, upload-time = "2025-10-08T09:15:44.959Z" },
 ]
-
-[[package]]
-name = "performance-test"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "locust" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "locust", specifier = "==2.29.1" }]
 
 [[package]]
 name = "psutil"
