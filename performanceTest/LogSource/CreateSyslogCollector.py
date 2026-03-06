@@ -113,4 +113,4 @@ class CreateSyslogCollectorUser(HttpUser):
                 response.success()
 
 
-#locust -f performanceTest/LogSource/CreateSyslogCollector.py --host=https://10.45.12.33
+#locust -f performanceTest/LogSource/CreateSyslogCollector.py --host=https://10.45.12.32
